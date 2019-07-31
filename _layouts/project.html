@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<article>
+  <header id="content-header">
+    <section id="page-title">
+      <h1>{{ page.title }}</h1>
+    </section>
+  </header>
+
+  <section id="content">
+
+    <div class="info">{% include dates.html to=page.project_date from=page.project_from_date %}
+      {% if page.project_venue %}<br>{{ page.project_venue }}{% endif %}</div>
+
+    <section class="main-content {% if page.video_embed %}with-media{% endif %}">
+      {{ content }}
+    </section>
+
+    {% if page.video_embed %}
+    <aside class="media">
+      {{ page.video_embed }}
+    </aside>
+    {% endif %}
+
+    {% if page.images[0].image_path %}
+    <aside class="image-gallery">
+      {% for image in page.images %}
+      {% if image.image_path %}
+      <a href="{% include imgpath.html src=image.image_path width=1280 %}" data-lightbox="gallery" data-title="{{ image.description }}">
+        {% include img.html src=image.image_path width=120 height=120 alt=image.description %}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </aside>
+    {% endif %}
+
+  </section>
+</article>

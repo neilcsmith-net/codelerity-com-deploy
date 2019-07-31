@@ -1,0 +1,37 @@
+
+body.front {
+  background-image: url("/assets/hope-sm.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
+  @include media($tablet) {
+    background-image: url("/assets/hope-lg.jpg");
+  }
+  .navigation {
+    background-color: $dark-gray-translucent;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    
+    .branding {
+      padding: 10px;
+      margin: auto;
+    }
+  }
+  
+  .site-footer {
+    .copyright {
+      display: none;
+    }
+    a {
+      color: $white;
+      &:active,
+        &:focus,
+        &:hover {
+        color: darken($white, 20%);
+      }
+    }
+  }
+
+}
