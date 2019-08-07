@@ -8,6 +8,11 @@ body.front {
   }
   .navigation {
     background-color: $dark-gray-translucent;
+    
+    .site-info {
+      display: none;
+    }
+    
   }
 
   main {
