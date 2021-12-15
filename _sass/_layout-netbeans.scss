@@ -1,0 +1,49 @@
+
+body.netbeans {
+
+  #page-title {
+    h1 {
+      background-image: url("/assets/apache-netbeans.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center;
+      margin-right: 1em;
+      padding-right: 4em;
+      @include media ($mobile) {
+        min-height: 100px;
+      }
+    }
+    h1::after {
+      content: "preview";
+      display: inline;
+      margin-left: 1em;
+      font-size: 0.4em;
+      text-transform: uppercase;
+      color: white;
+      background-color: #bbb;
+      padding: 0.2em 0.4em;
+      position: relative;
+      top: -1em;
+      font-family: $base-font-family;
+    }
+  }
+
+  .terms, aside {
+    font-size: 0.85em;
+    color: $medium-gray;
+  }
+
+  .type-arch {
+    font-size: 0.75em;
+  }
+
+  .download-arch {
+    h3 {
+      margin: 0;
+    }
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid $light-gray;
+  }
+
+}
