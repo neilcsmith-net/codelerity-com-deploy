@@ -10,6 +10,9 @@ permalink: /netbeans/
     are built with NBPackage using the official Apache NetBeans binary zip release.
     The packages themselves are not released by the Apache Software Foundation.
   </p>
+  <p>Most of these installers include a local JDK runtime for the IDE to run on, offering
+  a self-contained out-of-the-box experience. Additional JDK's for projects may be registered
+  and/or downloaded using <code>Tools / Java Platforms</code> in the IDE menu.</p>
 </section>
 
 <section class="terms">
@@ -36,10 +39,13 @@ permalink: /netbeans/
         <span class="type-arch">(.exe x86_64)</span></a></div>
   </section>
   <section class="download-arch">
-    <h3>macOS</h3>
-    <p>macOS support in NBPackage is in development. There is an Apache NetBeans
-      macOS installer (without JDK) available from the
-      <a href="https://netbeans.apache.org/download/">Apache NetBeans website</a>.</p>
+    <h3>macOS (x86_64)</h3>
+    <p>This installer includes Azul Zulu build of OpenJDK -
+      <a href="https://docs.azul.com/core/tpls/january-2022/zulu17_tpl.html">license terms</a>.</p>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v13-macos-build1/Apache-NetBeans-13.pkg" 
+            class="btn"><i class="fa fa-apple"></i>
+        Apache NetBeans 13 + JDK 17
+        <span class="type-arch">(.pkg x86_64)</span></a></div>
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
