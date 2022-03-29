@@ -6,13 +6,20 @@ body {
   line-height: $base-line-height;
 }
 
-h1,
+h1 {
+  font-family: $heading-font-family;
+  font-weight: normal;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $base-font-size;
+  margin: 0 0 rem($base-font-size);
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  color: lighten($base-font-color, 30%);
   font-weight: normal;
   font-size: $base-font-size;
   line-height: $heading-line-height;

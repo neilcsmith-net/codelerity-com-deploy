@@ -1,4 +1,8 @@
-  
+
+- title: "Services"
+  href: "/services/"
+- title: "Open-source"
+  href: "/open-source/"
 - title: "About"
   href: "/about/"
 - title: "Contact"
