@@ -13,19 +13,6 @@ body.netbeans {
         min-height: 100px;
       }
     }
-    h1::after {
-      content: "preview";
-      display: inline;
-      margin-left: 1em;
-      font-size: 0.4em;
-      text-transform: uppercase;
-      color: white;
-      background-color: #bbb;
-      padding: 0.2em 0.4em;
-      position: relative;
-      top: -1em;
-      font-family: $base-font-family;
-    }
   }
 
   .terms, aside {
