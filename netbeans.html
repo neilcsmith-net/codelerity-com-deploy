@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Apache NetBeans 15 packages"
+title: "Apache NetBeans 16 packages"
 permalink: /netbeans/
 ---
 
@@ -10,9 +10,10 @@ permalink: /netbeans/
     are built with NBPackage using the official Apache NetBeans binary zip release.
     The packages themselves are not released by the Apache Software Foundation.
   </p>
-  <p>Most of these installers include a local JDK runtime for the IDE to run on, offering
-  a self-contained out-of-the-box experience. Additional JDK's for projects may be registered
-  and/or downloaded using <code>Tools / Java Platforms</code> in the IDE menu.</p>
+  <p>These installers include a local Java 17 (LTS) JDK for the IDE to run on,
+    offering a self-contained out-of-the-box experience. Additional JDK's for projects
+    may be registered and/or downloaded using <code>Tools / Java Platforms</code> in the
+    IDE menu, supporting development of projects for Java 8 up to Java 19.</p>
 </section>
 
 <section class="terms">
@@ -32,34 +33,40 @@ permalink: /netbeans/
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
     <p>This installer includes Azul Zulu build of OpenJDK -
-      <a href="https://docs.azul.com/core/tpls/july-2022/zulu18_tpl.html">license terms</a>.</p>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/Apache-NetBeans-15.exe" 
+      <a href="https://docs.azul.com/core/tpls/october-2022/zulu17_tpl.html">license terms</a>.</p>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/Apache-NetBeans-16.exe" 
             class="btn"><i class="fa fa-windows"></i>
-        Apache NetBeans 15 + JDK 18
+        Apache NetBeans 16 + JDK 17
         <span class="type-arch">(.exe x86_64)</span></a></div>
   </section>
   <section class="download-arch">
     <h3>macOS (x86_64)</h3>
     <p>This installer includes Azul Zulu build of OpenJDK -
-      <a href="https://docs.azul.com/core/tpls/july-2022/zulu18_tpl.html">license terms</a>.</p>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/Apache-NetBeans-15.pkg" 
+      <a href="https://docs.azul.com/core/tpls/october-2022/zulu17_tpl.html">license terms</a>.</p>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/Apache-NetBeans-16.pkg" 
             class="btn"><i class="fa fa-apple"></i>
-        Apache NetBeans 15 + JDK 18
+        Apache NetBeans 16 + JDK 17
         <span class="type-arch">(.pkg x86_64)</span></a></div>
   </section>
   <section class="download-arch">
     <h3>Linux (x86_64)</h3>
     <p>These packages include Azul Zulu build of OpenJDK -
-      <a href="https://docs.azul.com/core/tpls/july-2022/zulu18_tpl.html">license terms</a>.</p>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/apache-netbeans_15-1_amd64.deb" 
+      <a href="https://docs.azul.com/core/tpls/october-2022/zulu17_tpl.html">license terms</a>.</p>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/apache-netbeans_16-1_amd64.deb" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans 15 + JDK 18
+        Apache NetBeans 16 + JDK 17
         <span class="type-arch">(.deb x86_64)</span></a></div>
     <aside>The .deb package should be installed using the distribution software manager,
-      or using <code>sudo dpkg -i FILENAME</code>.</aside>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/Apache_NetBeans-15-x86_64.AppImage" 
+      or using eg. <code>sudo dpkg -i FILENAME</code>.</aside>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/apache-netbeans-16-0.x86_64.rpm" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans 15 + JDK 18
+        Apache NetBeans 16 + JDK 17
+        <span class="type-arch">(.rpm x86_64)</span></a></div>
+    <aside>The .rpm package should be installed using the distribution software manager,
+      or using eg. <code>sudo dnf install ./FILENAME</code>.</aside>
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/Apache_NetBeans-16-x86_64.AppImage" 
+            class="btn"><i class="fa fa-linux"></i>
+        Apache NetBeans 16 + JDK 17
         <span class="type-arch">(.AppImage x86_64)</span></a></div>
     <aside>The AppImage does not require installation or root access - simply make executable and run.</aside>
   </section>
@@ -67,21 +74,18 @@ permalink: /netbeans/
     <h3>Linux (Arm)</h3>
     <p>This package includes BellSoft Liberica build of OpenJDK -
       <a href="https://bell-sw.com/liberica_eula/">license terms</a>.</p>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/Apache_NetBeans-15-arm.AppImage" 
+    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v16-build1/Apache_NetBeans-16-arm.AppImage" 
             class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans 15 + JDK 18
+        Apache NetBeans 16 + JDK 17
         <span class="type-arch">(.AppImage armhf 32-bit)</span></a></div>
     <aside>The AppImage does not require installation or root access - simply make executable and run.</aside>
   </section>
   <section class="download-arch">
     <h3>Linux (any architecture)</h3>
-    <p>This package requires and uses the system installed JDK.</p>
-    <div><a href="https://github.com/codelerity/netbeans-installers/releases/download/v15-build1/apache-netbeans_15-1_all.deb" 
-            class="btn"><i class="fa fa-linux"></i>
-        Apache NetBeans 15
-        <span class="type-arch">(.deb all)</span></a></div>
-    <aside>The .deb package should be installed using the distribution software manager,
-      or using <code>sudo dpkg -i FILENAME</code>.</aside>
+    <p>Now available directly from <a href="https://netbeans.apache.org/">Apache NetBeans</a>.</p>
+    <aside>Following our contribution of <a href="https://github.com/apache/netbeans-nbpackage">NBPackage</a>
+      to the Apache NetBeans project, RPM and DEB packages requiring and using a system
+      installed JDK will be made available directly from Apache NetBeans in future.</aside>
   </section>
 </section>
 
