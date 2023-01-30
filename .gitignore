@@ -8,4 +8,6 @@ _site
 # Bundler
 .bundle/
 vendor/
+
+# IDE
 nbproject/
