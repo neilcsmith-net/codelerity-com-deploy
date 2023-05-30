@@ -15,13 +15,13 @@ body.netbeans {
     }
   }
 
+  .downloads {
+    border-top: 1px solid $light-gray;
+  }
+
   .terms, aside {
     font-size: 0.85em;
     color: $medium-gray;
-  }
-
-  .type-arch {
-    font-size: 0.75em;
   }
 
   .download-arch {
@@ -38,6 +38,15 @@ body.netbeans {
       font-size: 1.2em;
       margin-right: 0.25em;
     }
+    .type-arch, .extra-info {
+      font-size: 0.75em;
+    }
+  }
+
+  .hash {
+    line-break: anywhere;
+    font-size: 0.8em;
+    background-color: transparent;
   }
 
 }
