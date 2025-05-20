@@ -1,12 +1,12 @@
 ## Assets
 
-All media and assets Copyright (c) 2019 Codelelrity Ltd.
+All media and assets Copyright (c) 2019-2025 Codelerity Ltd.
 
 ## Code
 
 The MIT License (MIT)
 
-Copyright (c) 2019 Codelerity Ltd.
+Copyright (c) 2019-2025 Codelerity Ltd.
 Copyright (c) 2016 Eye Division Ltd.
 Copyright (c) 2015 Ben Centra
 
