@@ -4,6 +4,7 @@ title: "Apache NetBeans 28"
 permalink: /netbeans/
 
 netbeans-version: 28
+netbeans-version-next: 29
 jdk-version: 25
 
 exe-x64-link: https://github.com/codelerity/netbeans-packages/releases/download/v28-build1/Apache-NetBeans-28.exe
@@ -25,51 +26,45 @@ deb-arm-link: https://github.com/codelerity/netbeans-packages/releases/download/
 deb-arm-hash: 754609a37e2679a2f404c5576fabaa5ca57a0df360078f5d10793edc756d114c
 ---
 
-<section>
-  <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages / installers
-    provided by Codelerity Ltd. (see <a href="#who">who we are</a>).
-    These packages are built with NBPackage using the official Apache NetBeans
-    binary zip release. The packages themselves are not released by the Apache
-    Software Foundation.
-  </p>
+<section class="intro">
+  <p><a href="https://netbeans.apache.org">Apache NetBeans</a> packages provided
+    by Neil C Smith of <span class="codelerity">codelerity</span>. Neil is a member of
+    the Apache NetBeans PMC and of the Apache Software Foundation. These
+    packages are built with NBPackage using the official Apache NetBeans binary
+    zip release. The packages themselves are not released by the foundation.</p>
   <p>These installers include a local Java {{ page.jdk-version }} JDK for the IDE to run on,
     offering a self-contained out-of-the-box experience. Additional JDK's for projects
-    may be registered and/or downloaded using <code>Tools / Java Platforms</code> in the
-    IDE menu, supporting development of projects from Java 8 up.</p>
+    may be registered and/or downloaded within the IDE, supporting development of projects
+    from Java 8 up.</p>
 </section>
 
-<section class="terms">
-  <p>These packages are provided without warranty, and under the licenses and terms of the bundled
-    software. Please make sure you're familiar with all terms before downloading.
-    Apache NetBeans is provided under the terms of the
+<section class="sponsor">
+  <h2>Sponsor</h2>
+  <p><strong>Your sponsorship</strong> helps to provide these installers freely for everyone. If
+    you can afford to, please contribute towards their ongoing provision.</p>
+  <p><a href="https://github.com/sponsors/neilcsmith-net" target="_blank"
+        class="btn"><i class="fa fa-heart"></i>
+      Sponsor
+      <span class="extra-info">via GitHub Sponsors</span></a></p>
+  <aside>Recommended amount of $10 for individuals, $100 for larger organizations,
+    but all support gratefully received!</aside>
+</section>
+
+<section class="downloads">
+  <h2>Downloads</h2>
+  <p class="terms">These packages are provided without warranty, and under the
+    licenses and terms of the bundled software. Please make sure you're familiar
+    with all terms before downloading. Apache NetBeans is provided under the terms of the
     <a href="https://github.com/apache/netbeans/blob/master/LICENSE">Apache Software License</a>.
     All of these packages include the <a href="https://adoptium.net">Eclipse Temurin</a>
     build of OpenJDK - see
     <a href="https://adoptium.net/en-GB/temurin/release-notes?version={{ page.jdk-version }}">Temurin release notes</a>.
   </p>
-</section>
-
-<section class="support">
-  <h2>Support</h2>
-  <p>For issues with the installers / packages themselves, please
-    <a href="https://github.com/codelerity/netbeans-packages/issues">raise an issue</a>
-    on our GitHub repository.</p>
-  <p>For community support with the IDE itself, please use the
-    <a href="https://netbeans.apache.org/community/mailing-lists/">Apache NetBeans mailing lists</a>.</p>
-  <p>For commercial support, maintenance or development with the IDE or platform, please
-    <a href="/contact/">contact us</a>.<br>
-    We can also provide customised and supported installers with a JDK and cluster configuration
-    of your choice.</p>
-  <p>Your sponsorship helps provide these installers, and your support is
-    gratefully received!</p>
-  <p><a href="https://github.com/sponsors/neilcsmith-net" target="_blank"
-            class="btn"><i class="fa fa-heart"></i>
-      Sponsor
-        <span class="extra-info">via GitHub Sponsors</span></a></p>
-</section>
-
-<section class="downloads">
-  <h2>Downloads</h2>
+  {% if page.netbeans-version-next %}
+  <p class="rc-announce"><strong>Apache NetBeans {{ page.netbeans-version-next }} is coming!</strong>
+    <a href="https://github.com/codelerity/netbeans-packages/releases">Help test
+      our release candidates</a></p>
+  {% endif %}
   <section class="download-arch">
     <h3>Windows (x86_64)</h3>
     <div><a href="{{ page.exe-x64-link }}" 
@@ -133,11 +128,29 @@ deb-arm-hash: 754609a37e2679a2f404c5576fabaa5ca57a0df360078f5d10793edc756d114c
   </section>
 </section>
 
-<section class="information">
-  <h2 id="who">Who we are</h2>
-  <p>These packages are provided by Codelerity Ltd., a company founded by Neil C Smith.
-    Neil is a member of both the Apache NetBeans PMC and the Apache Software Foundation.</p>
+<section class="support">
+  <h2>Support</h2>
+  <p>For issues with the installers / packages themselves, please
+    <a href="https://github.com/codelerity/netbeans-packages/issues">raise an issue</a>
+    on our GitHub repository.</p>
+  <p>For community support with the IDE itself, please use the
+    <a href="https://netbeans.apache.org/community/mailing-lists/">Apache NetBeans mailing lists</a>.</p>
+  <p>For commercial support, maintenance or development with the IDE or platform, please
+    <a href="/contact/">contact us</a>.<br>
+    We can also provide customized and supported installers with a JDK and cluster configuration
+    of your choice.</p>
+</section>
 
+<section class="build">
+  <h2>Build your own</h2>
+  <p>All our installers are built using the GitHub workflow at
+    <a href="https://github.com/codelerity/netbeans-packages">https://github.com/codelerity/netbeans-packages</a>.
+    This is also a template. Feel free to fork, edit and run this workflow to
+    customize and build your own installer packages. Although if you distribute them,
+    please make sure to remove references to Codelerity from the configuration!</p>
+</section>
+
+<section class="legal">
   <h2>Legal</h2>
   <p>Apache, Apache NetBeans and the Apache NetBeans logo are trademarks or registered trademarks
     of the Apache Software Foundation.

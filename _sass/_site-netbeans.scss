@@ -15,41 +15,56 @@ body.netbeans {
     }
   }
 
-  .downloads {
-    border-top: 1px solid $light-gray;
-  }
-
-  .terms, aside {
-    font-size: 0.85em;
-    color: $medium-gray;
-  }
-
-  .download-arch {
-    h3 {
-      margin: 0;
+  #content {
+    h2 {
+      color: $base-font-color;
     }
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid $light-gray;
-    aside {
+    section {
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid $light-gray;
+    }
+    .downloads, .legal {
+      border-bottom: none;
+    }
+    .terms, aside {
+      font-size: 0.85em;
+      color: $medium-gray;
+    }
+
+    .rc-announce {
+      padding: 0.25em 1em;
+      background-color: lighten($action-color, 75%);
+    }
+    .download-arch {
+      h3 {
+        margin: 0;
+      }
+      padding-bottom: 0.5em;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid $light-gray;
+      aside {
         margin-bottom: 1em;
+      }
     }
+
+    .btn {
+      .fa {
+        font-size: 1.2em;
+        margin-right: 0.25em;
+      }
+      .type-arch, .extra-info {
+        font-size: 0.75em;
+      }
+    }
+
+    .hash {
+      line-break: anywhere;
+      font-size: 0.8em;
+      background-color: transparent;
+    }
+
   }
 
-  .btn {
-    .fa {
-      font-size: 1.2em;
-      margin-right: 0.25em;
-    }
-    .type-arch, .extra-info {
-      font-size: 0.75em;
-    }
-  }
-
-  .hash {
-    line-break: anywhere;
-    font-size: 0.8em;
-    background-color: transparent;
-  }
 
 }
