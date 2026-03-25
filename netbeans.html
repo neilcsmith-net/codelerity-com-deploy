@@ -161,3 +161,50 @@ deb-arm-hash: 892954e45cd4fb0305bf277ec3568e3e66c33698a0b7c279ce08db18a9e88f09
     All other trademarks are the property of their respective holders and used here only for identification purposes.</p>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.24/dist/sweetalert2.all.min.js"
+        integrity="sha256-dQbI9NheRwerRvmFjwxuZeMxa50vEi3PSFudvznVp6w="
+        crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.24/dist/sweetalert2.min.css"
+      integrity="sha256-YKKnn5oXErZthQwr01oz4mEVF11gcVMJYcmUuhoyUgM=" crossorigin="anonymous">
+<script>
+  (function ($) {
+    "use strict"; // Start of use strict
+    $(document).ready(function () {
+      $('.downloads a.btn').on('click', e => {
+        e.preventDefault();
+        Swal.fire({
+          title: `Support Us`,
+          html: `
+            <p><strong>These packages are provided at personal expense.</strong><br>
+            If you can afford to, please contribute towards their ongoing provision.<br>
+            <a href="https://github.com/sponsors/neilcsmith-net" target="_blank"
+              class="btn"><i class="fa fa-heart"></i> Sponsor
+              <span class="extra-info">via GitHub Sponsors</span></a>
+            <a href="https://ko-fi.com/codelerity/" target="_blank"
+               class="btn"><i class="fa fa-coffee"></i> Buy us a Cup a' Java
+              <span class="extra-info">via Ko-fi</span></a></p>
+           `,
+          showCancelButton: true,
+          confirmButtonText: `Download package`,
+          confirmButtonColor: "#780113"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.assign(e.currentTarget.href);
+          }
+        });
+      });
+
+    });
+
+  })(jQuery); // End of use strict
+</script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('codelerity', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support Us',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>

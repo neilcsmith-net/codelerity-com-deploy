@@ -6,7 +6,7 @@
     // hljs.initHighlightingOnLoad();
 
     // Header
-    var menuToggle = $('#js-mobile-menu').unbind();
+    var menuToggle = $('#js-mobile-menu').off();
     $('#js-navigation-menu').removeClass("show");
     menuToggle.on('click', function(e) {
       e.preventDefault();

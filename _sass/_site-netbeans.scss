@@ -48,16 +48,6 @@ body.netbeans {
       }
     }
 
-    .btn {
-      .fa {
-        font-size: 1.2em;
-        margin-right: 0.25em;
-      }
-      .type-arch, .extra-info {
-        font-size: 0.75em;
-      }
-    }
-
     .hash {
       line-break: anywhere;
       font-size: 0.8em;
@@ -66,5 +56,18 @@ body.netbeans {
 
   }
 
+  .btn {
+    .fa {
+      font-size: 1.2em;
+      margin-right: 0.25em;
+    }
+    .type-arch, .extra-info {
+      font-size: 0.75em;
+    }
+  }
+
+  .site-footer {
+    padding-bottom: 80px;
+  }
 
 }
